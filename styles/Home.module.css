@@ -1,0 +1,87 @@
+.main {
+  display: grid;
+  margin: 0;
+  gap: 60px;
+  justify-items: center;
+}
+
+.raftersContainer {
+  width: 100vw;
+  box-sizing: content-box;
+  margin: 0;
+  z-index: -1;
+}
+
+.upperLine {
+  height: 2px;
+  width: 50vw;
+  background: black;
+}
+.introBlurb {
+display: flex;
+flex-direction: column;
+width: 50vw;
+gap: 20px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.lowerLine {
+  height: 2px;
+  width: 30vw;
+  background: black;
+}
+
+.miniGallery {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(4, auto)
+}
+
+.backyardContainer {
+  grid-area: 1 / 1 / span 2 / span 4;
+}
+
+.framingContainer {
+  grid-area: 3/ 1 / 4 / span 3;
+  max-width: 35vw;
+}
+
+.beamContainer {
+  grid-area: 4 / 1 / 4 / span 4;
+}
+
+.testimonial {
+  grid-area: 3 / 3 / 4 / span 2;
+  margin-right: 40px;
+  background: linear-gradient(90deg, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);  width: auto;
+  border: 1px solid black;
+  margin-top: 18px;
+  width: auto;
+  margin-bottom: 20px
+}
+
+
+
+@media only screen and (max-width: 1240px) {
+  .framingContainer {
+    grid-area: 3 / 1 / 4 / span 3
+  }
+  .beamContainer {
+    grid-area: 4 / 1 / 4 / span 4;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .raftersContainer {
+    margin-top: 0;
+    
+  }
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+}
