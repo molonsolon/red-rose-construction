@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import styles from "../styles/Contact.module.css";
 import Footer from "../components/Footer";
 import Pond from "../public/pond.png";
+import ContactForm from "../components/ContactForm";
 
 export const Contact: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ export const Contact: NextPage = () => {
             alt="A picture of a pond constructed by Shawn at Red Rose"
           />
         </figure>
+        <ContactForm />
         
       </main>
       <Footer />

@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import type { NextPage } from 'next'
+import { FunctionComponent } from 'react';
 import styles from '../styles/Nav.module.css'
 
-export const Nav: NextPage = () => {
+export const Nav: FunctionComponent = () => {
   return (
     <nav className={styles.navMain}>
       <section className={styles.logo}>
