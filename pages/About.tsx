@@ -17,14 +17,14 @@ export const About: NextPage = () => {
       </Head>
       <Nav />
       <main className={styles.main}>
-        <figure className={styles.headerPic}>
-          <Image src={Family} alt="Shawn and his son building a deck." />
-        </figure>
-        <section className={styles.aboutText}>
+        <section className={styles.aboutGrid}>
+          <figure className={styles.headerPic}>
+            <Image src={Family} alt="Shawn and his son building a deck." />
+          </figure>
           <figure className={styles.aboutPortrait}>
             <Image src={Fish} alt="Shawn holding a rainbow trout." />
           </figure>
-          <p>
+          <p className={styles.aboutText}>
             Hello, my name is Shawn Coulter. Here at Red Rose Construction
             specializes in residential remodels. We have experience building
             backyard kitchens... Incididunt pariatur elit in labore commodo. Eu
@@ -38,8 +38,9 @@ export const About: NextPage = () => {
             cillum magna pariatur laborum Lorem duis mollit. Et tempor excepteur
             dolore culpa ad excepteur irure sunt.
           </p>
-        </section>
+          </section>
       </main>
+      
       <Footer />
     </div>
   );

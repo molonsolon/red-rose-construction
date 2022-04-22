@@ -8,7 +8,10 @@ import Beam from "../public/beam.png";
 import Framing from "../public/framing.png";
 import Backyard from "../public/backyard.png";
 import ADU from "../public/adu.png";
+import Nest from "../public/theNest.png"
 import Footer from "../components/Footer"
+
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -19,9 +22,18 @@ const Home: NextPage = () => {
       </Head>
       <Nav />
       <main className={styles.main}>
-        <figure className={styles.raftersContainer}>
-          <Image src={Rafters} alt="A picture of rafters in a home" />
-        </figure>
+        <div className={styles.headerContainer}>
+          <figure className={styles.raftersContainer}>
+            <Image src={Rafters} alt="A picture of rafters in a home" />
+          </figure>
+          <div className={styles.textContainer}>
+            <p>
+              Simple <br></br>
+              Elegant <br></br>
+              Long-lasting
+            </p>
+          </div>
+        </div>
 
         <section className={styles.introBlurb}>
           <div className={styles.upperLine}>

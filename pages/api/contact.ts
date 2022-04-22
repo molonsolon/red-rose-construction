@@ -9,6 +9,8 @@ export default async function async(
   try {
     let transporter: Transporter = nodemailer.createTransport({
       service: 'yahoo',
+      logger: true,
+      debug: true,
       host: 'smtp.mail.yahoo.com',
       port: 465,
       secure: true,

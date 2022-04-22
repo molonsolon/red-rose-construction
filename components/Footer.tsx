@@ -7,9 +7,7 @@ export const Footer: FunctionComponent = () => {
             <p>
               RedRoseConstruction@gmail.com
             </p>
-            <p>
-              (530) 351-4441
-            </p>
+            
             <p>
               ©2022 All Rights Reserved
             </p>

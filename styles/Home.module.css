@@ -3,13 +3,30 @@
   margin: 0;
   gap: 60px;
   justify-items: center;
+  background-color: rgb(251, 250, 250);
+  z-index: -2;
 }
 
+.headerContainer {
+  z-index: 1;
+}
 .raftersContainer {
   width: 100vw;
+  
   box-sizing: content-box;
   margin: 0;
+  margin-top: -10vh;
   z-index: -1;
+}
+
+.textContainer {
+  margin-top: -250px;
+  margin-left: 50vw;
+  line-height: 50px;
+  z-index: 2;
+  font-size: 2rem;
+  position: absolute;
+  color: white;
 }
 
 .upperLine {
@@ -17,6 +34,7 @@
   width: 50vw;
   background: black;
 }
+
 .introBlurb {
 display: flex;
 flex-direction: column;
@@ -67,8 +85,13 @@ text-align: center;
 
 
 @media only screen and (max-width: 1240px) {
+  .raftersContainer {
+    margin-top: 0;
+    
+  }
   .framingContainer {
-    grid-area: 3 / 1 / 4 / span 3
+    grid-area: 3 / 1 / 4 / span 3;
+    
   }
   .beamContainer {
     grid-area: 4 / 1 / 4 / span 4;

@@ -17,14 +17,9 @@ export const Contact: NextPage = () => {
       </Head>
       <Nav />
       <main className={styles.main}>
-        <figure className={styles.headerPic}>
-          <Image 
-            src={Pond}
-            alt="A picture of a pond constructed by Shawn at Red Rose"
-          />
-        </figure>
+      <div className={styles.contactContainer}>
         <ContactForm />
-        
+      </div>
       </main>
       <Footer />
     </div>

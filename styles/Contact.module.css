@@ -4,14 +4,11 @@
   align-items: center;
   margin: 0;
   gap: 40px;
+  background-image: url(../public/pond.png);
+  background-size: cover;
+
 }
 
-.headerPic {
-  width: 100vw;
-  box-sizing: content-box;
-  margin: 0;
-  z-index: -1;
-  margin-top: -2vw;
-
-
+.contactContainer {
+  margin-top: 20vh;
 }
