@@ -2,11 +2,11 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  background: rgb(251, 250, 250);
+  background-color: rgb(251, 242, 232);
 }
 
 .aboutGrid {
-  padding-top: 15vh;
+  padding-top: 8vh;
   display: grid;
   grid-template-columns: 40vw 40vw;
   grid-template-rows: auto auto;
@@ -34,7 +34,8 @@
 .headerPic {
   grid-area: 1 / 1 / 1 / 1;
   margin: 0;
-  align-self: flex-end;
+  align-self: flex-start;
+  margin-top: 7vh;
 }
 
 .aboutPortrait {
