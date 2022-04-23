@@ -1,8 +1,8 @@
 .footer {
   height: auto;
-  max-width: 100%;
-  
+  width: 100%;
   padding-top: 15px;
+  padding-right: 20px;
   background: rgb(210, 209, 209);
   display: flex;
   flex-direction: column;
