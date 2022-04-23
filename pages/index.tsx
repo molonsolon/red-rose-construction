@@ -28,10 +28,15 @@ const Home: NextPage = () => {
           </figure>
           <div className={styles.textContainer}>
             <p>
-              Simple <br></br>
-              Elegant <br></br>
-              Long-lasting
+              SIMPLE 
             </p>
+            <p>
+              ELEGANT 
+            </p>
+            <p>
+              LONG-LASTING
+            </p>
+            
           </div>
         </div>
 

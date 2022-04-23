@@ -1,3 +1,14 @@
+@font-face {
+  font-family: ManifontGrotesk;
+  src: url('../public/ManifontGroteskBold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url('../public/Jost-VF.ttf')
+}
+
 .main {
   display: grid;
   margin: 0;
@@ -9,24 +20,41 @@
 
 .headerContainer {
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 .raftersContainer {
   width: 100vw;
-  
   box-sizing: content-box;
   margin: 0;
-  margin-top: -10vh;
+  margin-top: -18vh;
   z-index: -1;
 }
 
 .textContainer {
-  margin-top: -250px;
-  margin-left: 50vw;
-  line-height: 50px;
-  z-index: 2;
-  font-size: 2rem;
   position: absolute;
+  margin-left: 5%;
+  margin-top: 15%;
+  line-height: 80px;
+  z-index: 2;
+  gap: 1vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-family: Jost;
+  font-weight: 200;
   color: white;
+  align-items: center;
+}
+
+.textContainer > p {
+  margin: 0;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  text-align: center;
+  background: black;
+  /* background: linear-gradient(135deg, hsla(0, 0%, 0%, 0.9) 0%, hsla(0, 1%, 41%, .9) 100%); */
+  
 }
 
 .upperLine {
