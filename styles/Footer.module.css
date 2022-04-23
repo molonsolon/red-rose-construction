@@ -1,7 +1,7 @@
 .footer {
   height: auto;
-  width: 100vw;
-  padding-right: 50px;
+  max-width: 100%;
+  
   padding-top: 15px;
   background: rgb(210, 209, 209);
   display: flex;

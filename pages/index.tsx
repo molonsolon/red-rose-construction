@@ -27,18 +27,27 @@ const Home: NextPage = () => {
             <Image src={Rafters} alt="A picture of rafters in a home" />
           </figure>
           <div className={styles.textContainer}>
-            <p>
-              SIMPLE 
-            </p>
-            <p>
-              ELEGANT 
-            </p>
-            <p>
-              LONG-LASTING
-            </p>
+            <span className={styles.lines}>
+              <p className={styles.firstLine}>
+                SIMPLE 
+              </p>
+            </span>
+            <span className={styles.lines}>
+              <p className={styles.secondLine}>
+                ELEGANT 
+              </p>
+            </span>
+            <span className={styles.lines}>
+              <p className={styles.thirdLine}>
+                LONG-LASTING
+              </p>
+            </span>
             
           </div>
         </div>
+        <span className={styles.divider}>
+
+        </span>
 
         <section className={styles.introBlurb}>
           <div className={styles.upperLine}>
