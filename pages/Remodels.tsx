@@ -20,7 +20,23 @@ export const Remodels: NextPage = () => {
       <Nav />
       <main className={styles.main}>
         <div className={styles.slideshowContainer}>
-          <Slideshow images={['/../public/backyard.png', '/../public/pond.png', '/../public/concrete.png']}/>
+          <h3>
+            Backyard Kitchen
+          </h3>
+          <Slideshow images={['/../public/backyard-1.JPG', '/../public/backyard-2.JPG', '/../public/backyard-3.JPG']}/>
+          <h3>
+            Backyard Kitchen
+          </h3>
+          <Slideshow images={['/../public/backyard2-1.JPG', '/../public/backyard2-2.JPG']} />
+          <h3>
+            Floor Restoration
+          </h3>
+          <Slideshow images={['/../public/floor-1.JPG', '/../public/floor-2.JPG','/../public/floor-3.JPG']} />
+          <h3>
+            The Nest
+          </h3>
+          <Slideshow images={['/../public/nest-1.jpeg', '/../public/nest-2.jpeg', '/../public/nest-3.JPG']} />
+        
         </div>
         
       </main>

@@ -27,7 +27,8 @@ const Slideshow: FunctionComponent<Props> = ({ images=[] }) => {
 
   return (
     <div className={styles.container}>
-      <button className={styles.button} onClick={() => paginate(-1)}>
+      <button className={`${styles.button}
+            ${styles.prevButton}`} onClick={() => paginate(-1)}>
         <Image src={ChevronLeft} alt="a chevron pointing left" height="50" width="40" />
       </button>
       <figure className={styles.imageContainer}>
@@ -37,11 +38,12 @@ const Slideshow: FunctionComponent<Props> = ({ images=[] }) => {
           layout="responsive"
           objectFit="contain"
           width="100%"
-          height="80%"
+          height="30%"
         />
       </figure>
 
-      <button className={styles.button} onClick={() => paginate(1)}>
+      <button className={`${styles.button}
+            ${styles.nextButton}`} onClick={() => paginate(1)}>
         
         <Image src={ChevronRight} alt="a chevron pointing right" height="50" width="40" />
       </button>

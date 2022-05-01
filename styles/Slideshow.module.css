@@ -1,6 +1,6 @@
 .container {
   z-index: -2;
-  background-color: black;
+  
   display: flex;
   align-items: center;
 }
@@ -22,10 +22,26 @@
 }
 
 .button {
-  background-color: white;
+  background-color: transparent;
+  position: absolute;
   border: none;
   margin: 0;
   border-radius: 5px;
+  height: 100px;
+  transition: height .2s;
+  z-index: 5;
+
+}
+
+.nextButton {
+  margin-left: 70vw;
+}
+
+.prevButton {
+  margin-left:10vw;
+}
+
+.button > img:hover {
   height: 100px;
 }
 
