@@ -6,6 +6,7 @@
 }
 
 .slideshowContainer {
-  padding-top: 10vh;
-  padding-left: 5vh;
+  margin-top: 8vh;
+  width: 100%;
+  height: auto;
 }

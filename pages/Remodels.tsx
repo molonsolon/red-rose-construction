@@ -5,7 +5,10 @@ import Nav from "../components/Nav";
 import styles from "../styles/Remodels.module.css";
 import Footer from "../components/Footer"
 import Slideshow from '../components/Slideshow'
-
+import Backyard from "../public/backyard.png";
+import Pond from "../public/Pond.png";
+import Concrete from "../public/concrete.png";
+const IMAGES = [Backyard, Pond, Concrete]
 export const Remodels: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -17,7 +20,7 @@ export const Remodels: NextPage = () => {
       <Nav />
       <main className={styles.main}>
         <div className={styles.slideshowContainer}>
-          <Slideshow/>
+          <Slideshow images={['/../public/backyard.png', '/../public/pond.png', '/../public/concrete.png']}/>
         </div>
         
       </main>

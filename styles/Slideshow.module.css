@@ -1,10 +1,32 @@
+.container {
+  z-index: -2;
+  background-color: black;
+  display: flex;
+  align-items: center;
+}
+
 .imageContainer > * {
-  z-index: -5;
+  z-index: -1;
+  box-sizing: content-box;
+  object-position: 50% 50%;
 }
 .imageContainer {
-  height: 30vh;
-  width: 40vw;
-}
-.container{
+  width: 80vw;
+  z-index: 1;
 
 }
+
+.buttonContainer {
+  width: 10vw;
+  z-index: 2;
+}
+
+.button {
+  background-color: white;
+  border: none;
+  margin: 0;
+  border-radius: 5px;
+  height: 100px;
+}
+
+

@@ -1,43 +1,52 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "../styles/Slideshow.module.css";
-import Backyard from "../public/Backyard.png";
-import Pond from "../public/Pond.png";
-import Concrete from "../public/concrete.png";
-import useEmblaCarousel from "embla-carousel-react";
-import Link from 'next/link'
-import { FunctionComponent, useState, useEffect, useCallback } from "react";
 
-const IMAGES = [Backyard, Pond, Concrete];
+import ChevronRight from "../public/chevron-right.svg";
+import ChevronLeft from "../public/chevron-left.svg";
+import { FunctionComponent, useState } from "react";
 
-const Slideshow: FunctionComponent = () => {
-  const [page, setPage] = useState(0);
-  const paginate = (direction: number) => {
-    setPage(page + direction)
-  };
-
+interface Props {
+  images: Array<string>;
   
+}
+
+;
+
+const Slideshow: FunctionComponent<Props> = ({ images=[] }) => {
+  const [page, setPage] = useState(0);
+  
+  const paginate = (direction: number) => {
+    if (page === 0 && direction === -1) {
+      setPage(images.length - 1)
+    } else if (page === images.length - 1 && direction === 1) {
+      setPage(0)
+    } else {
+      setPage(page + direction);
+    }
+  };
 
   return (
     <div className={styles.container}>
+      <button className={styles.button} onClick={() => paginate(-1)}>
+        <Image src={ChevronLeft} alt="a chevron pointing left" height="50" width="40" />
+      </button>
       <figure className={styles.imageContainer}>
-        <Image 
-          src={IMAGES[page]}
-          alt='A slideshow of images'
+        <Image
+          src={images[page]}
+          alt="A slideshow of images"
           layout="responsive"
           objectFit="contain"
           width="100%"
-          height="100%"
+          height="80%"
         />
       </figure>
-      <button
-        onClick={() => paginate(-1)}>
-        prev
-      </button>
-      <button onClick={() => paginate(1)}>
-        next
+
+      <button className={styles.button} onClick={() => paginate(1)}>
+        
+        <Image src={ChevronRight} alt="a chevron pointing right" height="50" width="40" />
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Slideshow
+export default Slideshow;
